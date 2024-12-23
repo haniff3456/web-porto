@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lail Hanif Hernandityo - Portfolio</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lail Hanif Hernandityo",
+      "jobTitle": "Mahasiswa Ilmu Komputer",
+      "description": "A passionate Computer Science student aspiring to become an entrepreneur.",
+      "url": "https://yourwebsite.com",
+      "email": "mailto:lailhanif3@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Citra Raya Panongan",
+        "addressRegion": "Banten",
+        "addressCountry": "Indonesia"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universitas Yatsi Madani"
+      },
+      "sameAs": [
+        "mailto:lailhanif3@gmail.com",
+        "https://www.instagram.com/lhnfff",
+        "https://wa.me/6289601055787"
+        "https://www.tiktok.com/@lail_hnff?_t=ZS-8s8NQ89VYSP&_r=1"
+      ]
+    }
+    </script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #0066cc, #003366);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background: #222;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
+            transform: scale(1.1);
+        }
+
+        /* Main Section */
+        main {
+            padding: 50px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        /* Education Section */
+        .education-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .education-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .education-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .education-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Hobby Section Styling */
+        .hobby-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hobby-item {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobby-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .hobby-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center; /* Agar item terpusat */
+}
+
+.skill-item {
+    text-align: center;
+    flex: 1 1 calc(16.66% - 20px); /* Membagi 6 item per baris */
+    max-width: 120px; /* Batas lebar maksimal */
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff; /* Tambahkan latar belakang putih */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px); /* Animasi hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+.skill-item img {
+    width: 60px; /* Lebih besar agar lebih menarik */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Efek hover pada gambar */
+}
+
+.skill-item img:hover {
+    transform: scale(1.1); /* Perbesar sedikit gambar saat hover */
+}
+
+.skill-item h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+
+        /* Contact Section */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 25px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <a href="img/profil.jpg" target="_blank">
+                <img src="img/profil.jpg" alt="Lail Hanif Hernandityo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #fff;">
+            </a>
+            <div>
+                <h1>Lail Hanif Hernandityo</h1>
+                <p>Universitas Yatsi Madani | Ilmu Komputer</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">TENTANG SAYA</a></li>
+            <li><a href="#projects">PENDIDIKAN</a></li>
+            <li><a href="#hobbies">HOBI</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">KONTAK SAYA</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>Halo perkenalkan nama saya Lail Hanif Hernandityo. Saya lahir di Kalirejo, 
+                    Lampung Tengah pada tanggal 26 Januari 2005 dan sekarang tinggal di Perum Duta Asri, 
+                    Tangerang. Saya adalah seorang mahasiswa dari Universitas Yatsi Madani jurusan Ilmu Komputer.Saya mempunyai hobi bermain badminton, futsal, dan basket, yang bisa kalian lihat di menu hobi disitu ada saya dan teman teman saya sedang bermain futsal,badminton, dan basket
+                    . Saya juga menyukai sayur sop sebagai makanan favorit.</p>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="container">
+                <h2>Pendidikan</h2>
+                <div class="education-container">
+                    <div class="education-item">
+                        <a href="https://daftarsekolah.net/sekolah/411830/sd-n-cukanggalih-iii" target="_blank">
+                            <img src="https://cdn-sekolah.annibuku.com/20604374/3.jpg" alt="Logo SD">
+                        </a>
+                        <strong>SD NEGERI CUKANGGALIH 3</strong>
+                        <p>2011-2017</p>
+                    </div>
+                    <div class="education-item">
+                        <a href="https://www.smpn1panongan.sch.id/" target="_blank">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78hT909wTrQE7_Xjp-qk__xoc6VuI_zorsQ&s" alt="Logo SMP">
+                        </a>
+                        <strong>SMP NEGERI 1 PANONGAN</strong>
+                        <p>2017-2020</p>
+                    </div>
+                    <div class="education-item">
+                        <a href="https://sman32kabupatentangerang.sch.id/" target="_blank">
+                            <img src="https://sman32kabupatentangerang.sch.id/wp-content/uploads/2023/05/cropped-LOGO-SMAN-32-KABUPATEN-TANGERANG-1.png" alt="Logo SMA">
+                        </a>
+                        <strong>SMA NEGERI 32 KAB. TANGERANG</strong>
+                        <p>2020-2023</p>
+                    </div>
+                    <div class="education-item">
+                        <a href="https://www.uym.ac.id/" target="_blank">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9x1-W3SLALMiPDP7_dGfwHN0bnIiwBOaRw&s" alt="Logo University">
+                        </a>
+                        <strong>UNIVERSITAS YATSI MADANI</strong>
+                        <p>2023-Sekarang</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="hobbies">
+            <div class="container">
+                <h2>Hobi Saya</h2>
+                <div class="hobby-images">
+                    <div class="hobby-item">
+                        <a href="img/futsal.jpg" target="_blank">
+                            <img src="img/futsal.jpg" alt="Bermain Futsal">
+                        </a>
+                        <p>Bermain Futsal</p>
+                    </div>
+                    <div class="hobby-item">
+                        <a href="img/badminton.jpg" target="_blank">
+                            <img src="img/badminton.jpg" alt="Bermain Badminton">
+                        </a>
+                        <p>Bermain Badminton</p>
+                    </div>
+                    <div class="hobby-item">
+                        <a href="img/basket.jpg" target="_blank">
+                            <img src="img/basket.jpg" alt="Bermain Basket">
+                        </a>
+                        <p>Bermain Basket</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill -->
+        <section id="skill">
+            <div class="container">
+                  <h2>Skill</h2>
+<div class="skill-container">
+<div class="skill-item">
+<img src="http://1.bp.blogspot.com/-NGHwBncyA68/UiMm_8b2ZUI/AAAAAAAAAnA/17OGXCKI4zE/s1600/Logo+HTML5.JPG" alt="HTML">
+<h4>HTML</h4>
+</div>
+<div class="skill-item">
+<img src="https://image.pngaaa.com/311/3920311-middle.png" alt="CSS">
+<h4>CSS</h4>
+</div>
+<div class="skill-item">
+<img src="http://json-ld.org/images/json-ld-logo.png" alt="JavaScript">
+<h4>Json-LD</h4>
+</div>
+<div class="skill-item">
+<img src="https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-png-transparent.png" alt="PHP">
+<h4>PHP</h4>
+</div>
+<div class="skill-item">
+<img src="https://tse4.mm.bing.net/th?id=OIP.urLHYMYPFxkcs6AC4Io9vwHaHa&pid=Api&P=0&h=220" alt="MySQL">
+<h4>MySQL</h4>
+</div>
+<div class="skill-item">
+<img src="https://gss-technology.com/wp-content/uploads/2021/07/04.png" alt="Laravel">
+<h4>Pyhton</h4>
+</div>
+</div>
+</div>
+</section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Kontak Saya</h2>
+                <div style="text-align: center;">
+                    <a href="mailto:lailhanif3@gmail.com" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5FqrS9OkN5XrA5_GXcN7OV-SoLIl0KPwoQ&s" alt="Google" style="width: 40px; height: 40px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.instagram.com/lhnfff" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" style="width: 40px; height: 40px; margin: 0 10px;">
+                    </a>
+                    <a href="https://wa.me/6289601055787" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.tiktok.com/@lail_hnff?_t=ZS-8s8NQ89VYSP&_r=1" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbQsNzNkgGqWAFiB-jhUZPkKEQFe_f_T5uw&s" alt="Tiktok" style="width: 40px; height: 40px; margin: 0 10px;">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lail Hanif Hernandityo. Universitas Yatsi Madani.</p>
+    </footer>
+</body>
+</html>
